@@ -240,9 +240,8 @@ MIT License — see [LICENSE](LICENSE) for details.
 
 ## Author
 
-**Alpha Associates (T) Limited**
-- Email: info@alphaassociates.co.tz
-- Website: alphaassociates.co.tz
+**Atilio Obadia**
+- Email: atilioobadia@gmail.com
 
 ## Contributing
 

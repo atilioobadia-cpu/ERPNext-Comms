@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "erpnext_comms"
 version = "0.0.1"
 description = "Unified Communication Hub for ERPNext — WhatsApp, SMS, Voice, Chat, AI"
-authors = [{name = "Alpha Associates (T) Limited", email = "info@alphaassociates.co.tz"}]
+authors = [{name = "Atilio Obadia", email = "atilioobadia@gmail.com"}]
 license = {text = "MIT"}
 requires-python = ">=3.10"
 dependencies = [
