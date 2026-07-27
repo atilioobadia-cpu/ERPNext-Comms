@@ -1,0 +1,210 @@
+{
+ "actions": [],
+ "autoname": "field:message_id",
+ "creation": "2026-07-27 15:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_basic",
+  "message_id",
+  "direction",
+  "status",
+  "column_basic",
+  "from_number",
+  "to_number",
+  "section_content",
+  "message_body",
+  "column_content",
+  "media_url",
+  "section_linking",
+  "link_doctype",
+  "link_name",
+  "column_linking",
+  "communication",
+  "agent",
+  "section_timing",
+  "sent_at",
+  "received_at",
+  "column_timing",
+  "creation"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_basic",
+   "fieldtype": "Section Break",
+   "label": "Message Info"
+  },
+  {
+   "fieldname": "message_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Message ID",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "direction",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Direction",
+   "options": "Incoming\nOutgoing",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Sent\nDelivered\nRead\nFailed\nReceived"
+  },
+  {
+   "fieldname": "column_basic",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "from_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "From",
+   "reqd": 1,
+   "options": "Phone"
+  },
+  {
+   "fieldname": "to_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "To",
+   "reqd": 1,
+   "options": "Phone"
+  },
+  {
+   "fieldname": "section_content",
+   "fieldtype": "Section Break",
+   "label": "Content"
+  },
+  {
+   "fieldname": "message_body",
+   "fieldtype": "Small Text",
+   "label": "Message",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_content",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "media_url",
+   "fieldtype": "Data",
+   "label": "Media URL",
+   "options": "URL"
+  },
+  {
+   "fieldname": "section_linking",
+   "fieldtype": "Section Break",
+   "label": "Linking"
+  },
+  {
+   "fieldname": "link_doctype",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Linked To",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "link_name",
+   "fieldtype": "Dynamic Link",
+   "in_list_view": 1,
+   "label": "Linked Document",
+   "options": "link_doctype"
+  },
+  {
+   "fieldname": "column_linking",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "communication",
+   "fieldtype": "Link",
+   "label": "Communication",
+   "options": "Communication",
+   "read_only": 1
+  },
+  {
+   "fieldname": "agent",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Agent",
+   "options": "User"
+  },
+  {
+   "fieldname": "section_timing",
+   "fieldtype": "Section Break",
+   "label": "Timing"
+  },
+  {
+   "fieldname": "sent_at",
+   "fieldtype": "Datetime",
+   "label": "Sent At"
+  },
+  {
+   "fieldname": "received_at",
+   "fieldtype": "Datetime",
+   "label": "Received At"
+  },
+  {
+   "fieldname": "column_timing",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "creation",
+   "fieldtype": "Datetime",
+   "label": "Created",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-27 15:00:00",
+ "modified_by": "Administrator",
+ "module": "ERPNext Comms",
+ "name": "EC WhatsApp Message Log",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "share": 1,
+   "write": 1,
+   "role": "EC Manager"
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "share": 1,
+   "write": 1,
+   "role": "EC Agent"
+  },
+  {
+   "read": 1,
+   "report": 1,
+   "role": "EC Viewer"
+  }
+ ],
+ "search_fields": "from_number,to_number,message_body",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "from_number",
+ "track_changes": 1
+}

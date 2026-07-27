@@ -1,0 +1,119 @@
+{
+ "actions": [],
+ "autoname": "field:template_name",
+ "creation": "2026-07-27 15:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "template_name",
+  "channel",
+  "enabled",
+  "section_content",
+  "subject",
+  "column_content",
+  "body",
+  "section_config",
+  "variables",
+  "column_config",
+  "provider",
+  "template_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "template_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Template Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "channel",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Channel",
+   "options": "WhatsApp\nSMS\nEmail",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Enabled"
+  },
+  {
+   "fieldname": "section_content",
+   "fieldtype": "Section Break",
+   "label": "Content"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "label": "Subject"
+  },
+  {
+   "fieldname": "column_content",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "body",
+   "fieldtype": "Text Editor",
+   "label": "Body",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_config",
+   "fieldtype": "Section Break",
+   "label": "Configuration"
+  },
+  {
+   "description": "Comma-separated variable names: customer_name, task_id, etc.",
+   "fieldname": "variables",
+   "fieldtype": "Small Text",
+   "label": "Variables"
+  },
+  {
+   "fieldname": "column_config",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "provider",
+   "fieldtype": "Link",
+   "label": "Provider",
+   "options": "EC Provider"
+  },
+  {
+   "description": "For WhatsApp templates — the Twilio Content SID or template ID",
+   "fieldname": "template_id",
+   "fieldtype": "Data",
+   "label": "Template ID"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-27 15:00:00",
+ "modified_by": "Administrator",
+ "module": "ERPNext Comms",
+ "name": "EC Message Template",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "write": 1,
+   "role": "EC Manager"
+  },
+  {
+   "create": 1,
+   "read": 1,
+   "role": "EC Agent"
+  }
+ ],
+ "search_fields": "template_name,channel",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "template_name",
+ "track_changes": 1
+}

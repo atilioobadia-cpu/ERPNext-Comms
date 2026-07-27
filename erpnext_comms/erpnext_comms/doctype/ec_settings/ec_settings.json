@@ -1,0 +1,143 @@
+{
+ "actions": [],
+ "creation": "2026-07-27 15:00:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "enabled",
+  "section_general",
+  "default_from_number",
+  "column_general",
+  "whatsapp_section",
+  "whatsapp_enabled",
+  "whatsapp_from_number",
+  "column_whatsapp",
+  "sms_section",
+  "sms_enabled",
+  "sms_from_number",
+  "column_sms",
+  "voice_section",
+  "voice_enabled",
+  "voice_from_number",
+  "section_ai",
+  "ai_enabled",
+  "ai_provider"
+ ],
+ "fields": [
+  {
+   "default": "1",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
+  },
+  {
+   "fieldname": "section_general",
+   "fieldtype": "Section Break",
+   "label": "General"
+  },
+  {
+   "fieldname": "default_from_number",
+   "fieldtype": "Data",
+   "label": "Default From Number",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "column_general",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "whatsapp_section",
+   "fieldtype": "Section Break",
+   "label": "WhatsApp"
+  },
+  {
+   "fieldname": "whatsapp_enabled",
+   "fieldtype": "Check",
+   "label": "WhatsApp Enabled"
+  },
+  {
+   "fieldname": "whatsapp_from_number",
+   "fieldtype": "Data",
+   "label": "WhatsApp Number",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "column_whatsapp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sms_section",
+   "fieldtype": "Section Break",
+   "label": "SMS"
+  },
+  {
+   "fieldname": "sms_enabled",
+   "fieldtype": "Check",
+   "label": "SMS Enabled"
+  },
+  {
+   "fieldname": "sms_from_number",
+   "fieldtype": "Data",
+   "label": "SMS Number",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "column_sms",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "voice_section",
+   "fieldtype": "Section Break",
+   "label": "Voice"
+  },
+  {
+   "fieldname": "voice_enabled",
+   "fieldtype": "Check",
+   "label": "Voice Enabled"
+  },
+  {
+   "fieldname": "voice_from_number",
+   "fieldtype": "Data",
+   "label": "Voice Number",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "section_ai",
+   "fieldtype": "Section Break",
+   "label": "AI"
+  },
+  {
+   "fieldname": "ai_enabled",
+   "fieldtype": "Check",
+   "label": "AI Enabled"
+  },
+  {
+   "fieldname": "ai_provider",
+   "fieldtype": "Select",
+   "label": "AI Provider",
+   "options": "\nOpenAI\nAnthropic\nOllama\nNone"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-07-27 15:00:00",
+ "modified_by": "Administrator",
+ "module": "ERPNext Comms",
+ "name": "EC Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "read": 1,
+   "write": 1,
+   "role": "EC Manager"
+  },
+  {
+   "read": 1,
+   "role": "System Manager"
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

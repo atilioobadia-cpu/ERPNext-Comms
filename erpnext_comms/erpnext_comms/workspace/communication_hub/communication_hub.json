@@ -1,0 +1,98 @@
+{
+ "actions": [],
+ "category": "Modules",
+ "color": "#00897B",
+ "creation": "2026-07-27 15:00:00",
+ "doctype": "Workspace",
+ "dev_status": "Production",
+ "docstatus": 0,
+ "links": [
+  {
+   "link_count": 20,
+   "link_type": "DocType",
+   "type": "Card Break",
+   "label": "Communication Logs",
+   "hidden": 0
+  },
+  {
+   "link_type": "DocType",
+   "link_to": "EC WhatsApp Message Log",
+   "label": "WhatsApp Messages",
+   "type": "Link",
+   "hidden": 0
+  },
+  {
+   "link_type": "DocType",
+   "link_to": "EC SMS Log",
+   "label": "SMS Messages",
+   "type": "Link",
+   "hidden": 0
+  },
+  {
+   "link_type": "DocType",
+   "link_to": "Communication",
+   "label": "All Communications",
+   "type": "Link",
+   "hidden": 0
+  },
+  {
+   "link_type": "DocType",
+   "link_to": "EC Message Template",
+   "label": "Message Templates",
+   "type": "Link",
+   "hidden": 0
+  },
+  {
+   "link_count": 10,
+   "link_type": "DocType",
+   "type": "Card Break",
+   "label": "Configuration",
+   "hidden": 0
+  },
+  {
+   "link_type": "DocType",
+   "link_to": "EC Settings",
+   "label": "Settings",
+   "type": "Link",
+   "hidden": 0
+  },
+  {
+   "link_type": "DocType",
+   "link_to": "EC Provider",
+   "label": "Providers",
+   "type": "Link",
+   "hidden": 0
+  }
+ ],
+ "modified": "2026-07-27 15:00:00",
+ "modified_by": "Administrator",
+ "module": "ERPNext Comms",
+ "name": "Communication Hub",
+ "owner": "Administrator",
+ "parent_page": "",
+ "restrict_to_role": "EC Manager",
+ "shortcuts": [
+  {
+   "link_to": "EC WhatsApp Message Log",
+   "label": "WhatsApp Messages",
+   "type": "DocType"
+  },
+  {
+   "link_to": "EC SMS Log",
+   "label": "SMS Messages",
+   "type": "DocType"
+  },
+  {
+   "link_to": "EC Settings",
+   "label": "EC Settings",
+   "type": "DocType"
+  },
+  {
+   "link_to": "EC Provider",
+   "label": "Providers",
+   "type": "DocType"
+  }
+ ],
+ "title": "Communication Hub",
+ "type": "Module"
+}

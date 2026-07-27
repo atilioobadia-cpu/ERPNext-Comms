@@ -1,0 +1,27 @@
+/* ERPNext Comms styles */
+.whatsapp-indicator {
+    background-color: #25D366;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.sms-indicator {
+    background-color: #039BE5;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.voice-indicator {
+    background-color: #8E24AA;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+}
